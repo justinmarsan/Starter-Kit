@@ -1,0 +1,3 @@
+/* In production you should import only the needed stylesheet or add a special class on body to target the right styles */
+
+@import url("pages/homepage.css");

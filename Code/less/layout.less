@@ -1,1 +1,22 @@
-/********** LAYOUT **********/
+/********** Mixins **********/
+.grid(@number : 1, @sub : 0px, @gutter : 10px, @column : 30px) {
+	@columns : @column * @number;
+	@gutters : @gutter * (@number - 1);
+	width: @columns + @glitter - @sub;
+	display:block;
+	float:left;
+}
+
+.clear() {
+	overflow:auto;
+	zoom:1;
+}
+
+.clearfix() {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/********** Mixins **********/

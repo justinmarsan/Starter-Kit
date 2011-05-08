@@ -19,4 +19,14 @@
 	clear: both;
 	visibility: hidden;
 }
+
+.vertical-middle(@container, @self) {
+	margin-top:(@container - @self) / 2;
+}
+
+.hide() {
+	position:relative;
+	top:auto;
+	left:-99999px;
+}
 /********** Mixins **********/

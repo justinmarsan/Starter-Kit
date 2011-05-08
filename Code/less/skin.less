@@ -20,4 +20,11 @@
 	-webkit-box-shadow: @top @left @blur @color;
 	box-shadow: @top @left @blur @color;
 }
+
+.opacity(@n : 50) {
+	filter: alpha(opacity=@n);
+	-moz-opacity:@n / 100;
+	-khtml-opacity:@n / 100;
+	opacity:@n / 100;
+}
 /********** Mixins **********/

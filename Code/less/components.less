@@ -1,4 +1,4 @@
-/********** Mixins **********/
+/********** Components **********/
 .rounded(@radius : 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
@@ -27,4 +27,20 @@
 	-khtml-opacity:@n / 100;
 	opacity:@n / 100;
 }
-/********** Mixins **********/
+
+.clear() {
+	overflow:auto;
+	zoom:1;
+}
+
+.clearfix() {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.vertical-middle(@container, @self) {
+	margin-top:(@container - @self) / 2;
+}

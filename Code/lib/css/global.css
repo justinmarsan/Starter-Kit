@@ -228,3 +228,36 @@ textarea {
 .row-fluid .span12 {
   width: 99.99999998999999%;
 }
+/*====================
+	List
+	*/
+.list {
+  margin: 0;
+  padding: 0;
+}
+/*----------
+	List Inline
+	*/
+.list--inline {
+  margin: 0;
+  padding: 0;
+}
+.list--inline li {
+  display: inline-block;
+}
+/*----------
+	Comma List
+	*/
+.list--comma {
+  margin: 0;
+  padding: 0;
+}
+.list--comma li {
+  display: inline-block;
+}
+.list--comma li:after {
+  content: ", ";
+}
+.list--comma li:last-child:after {
+  content: none;
+}

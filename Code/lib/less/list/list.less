@@ -1,0 +1,39 @@
+/*====================
+	List
+	*/
+.list {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/*----------
+	List Inline
+	*/
+.list--inline {
+	.list();
+	
+	li {
+		display: inline-block;
+	}
+}
+
+
+
+
+/*----------
+	Comma List
+	*/
+.list--comma {
+	.list--inline();
+	
+	li:after {
+		content: ", ";
+	}
+	
+	li:last-child:after {
+		content: none;
+	}
+}

@@ -1,6 +1,8 @@
 /.idea
 /.idea/
 /.idea/*
+.DS_Store
+*/.DS_Store
 Code/.idea/workspace.xml
 
 Code/.idea/vcs.xml
